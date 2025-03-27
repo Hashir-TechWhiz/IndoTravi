@@ -1,12 +1,22 @@
 import React from 'react'
+import HowItWorks from '../components/pageSections/HowItWork';
+import HeroSection from '../components/pageSections/HeroSection';
+import TourPackages from '../components/pageSections/TourPackages';
+import Testimonials from '../components/pageSections/Testimonials';
+import BestLocations from '../components/pageSections/BestLocations';
+import BlogCards from '../components/pageSections/Blog';
 
 const Home = () => {
     return (
-        <div className='p-2 md:p-3'>
-            <div className="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat rounded-xl" style={{ backgroundImage: `url(/images/Bg.webp)` }}>
-                <h1>Welcome</h1>
-            </div>
-        </div>
+        <>
+            <HeroSection />
+            <BestLocations />
+            <HowItWorks />
+            <TourPackages />
+            <Testimonials />
+            <BlogCards />
+        </>
+
     )
 }
 

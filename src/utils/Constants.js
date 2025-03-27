@@ -1,4 +1,4 @@
-
+import { MagnifyingGlassIcon, TicketIcon, BoltIcon, BuildingLibraryIcon } from '@heroicons/react/24/outline';
 
 // NavItems.js
 export const navItems = [
@@ -24,22 +24,6 @@ export const navItems = [
     }
 ];
 
-//Search Items
-export const searchItems = [
-    {
-        label: 'Date',
-        icon: '',
-    },
-    {
-        label: 'Budget',
-        icon: '',
-    },
-    {
-        label: 'Guest',
-        icon: '',
-    }
-]
-
 // Home Cards
 export const homeCards = [
     {
@@ -56,7 +40,7 @@ export const homeCards = [
     },
     {
         count: '5.0',
-        description: 'average Ratings',
+        description: 'Average Ratings',
     },
 ]
 
@@ -108,92 +92,82 @@ export const destinations = [
     },
 ];
 
-//Location higlighted 
-export const highlightContentLocation = {
-    heading: "Indonesian Tourism",
-    subheading: "Best Location",
-    description: "Extraordinary natural beauty, enjoy the rich culture, and experience the friendliness of the local people."
-};
-
 //tour data 
-export const tourData = [
+export const tourPackages = [
     {
-        image: "images/D1.jpg",
-        days: "7 Days",
-        rating: 4.9,
-        date: "23 August - 29 August",
-        title: "Bali Tour Package",
-        price: "$285",
+        id: 1,
+        image: '/images/Bg.webp',
+        days: '7 Days',
+        rating: '4.9',
+        startDate: '23 AUGUST',
+        endDate: '29 AUGUST',
+        destination: 'Bali Tour Package',
+        price: '$285',
     },
     {
-        image: "images/D2.jpg",
-        days: "5 Days",
-        rating: 4.9,
-        date: "23 August - 27 August",
-        title: "Java Tour Package",
-        price: "$218",
+        id: 2,
+        image: '/images/Bg.webp',
+        days: '5 Days',
+        rating: '4.8',
+        startDate: '23 AUGUST',
+        endDate: '27 AUGUST',
+        destination: 'Java Tour Package',
+        price: '$218',
     },
     {
-        image: "images/D3.jpg",
-        days: "3 Days",
-        rating: 4.9,
-        date: "23 August - 25 August",
-        title: "Solo Tour Package",
-        price: "$163",
+        id: 3,
+        image: '/images/Bg.webp',
+        days: '3 Days',
+        rating: '4.9',
+        startDate: '23 AUGUST',
+        endDate: '25 AUGUST',
+        destination: 'Solo Tour Package',
+        price: '$163',
     },
 ];
 
-// //how its working
-// export const steps = [
-//     {
-//         icon: <SearchIcon className="w-10 h-10 text-blue-500" />,
-//         title: "Find your destination",
-//         description:
-//             "Embark on a journey to discover your dream destination, where adventure and relaxation await.",
-//     },
-//     {
-//         icon: <TicketIcon className="w-10 h-10 text-blue-500" />,
-//         title: "Book a ticket",
-//         description:
-//             "Ensure a smooth travel experience by booking tickets to your preferred destination via our booking platform.",
-//     },
-//     {
-//         icon: <CreditCardIcon className="w-10 h-10 text-blue-500" />,
-//         title: "Make payment",
-//         description:
-//             "We offer a variety of payment options to meet your preferences and ensure a hassle-free transaction process.",
-//     },
-//     {
-//         icon: <LocationMarkerIcon className="w-10 h-10 text-blue-500" />,
-//         title: "Explore destination",
-//         description:
-//             "You'll be immersed in a captivating tapestry of sights, sounds, and tastes as you wind your way through the ancient streets.",
-//     },
-// ];
+//how its working
+export const steps = [
+    {
+        icon: MagnifyingGlassIcon,
+        title: "Find your destination",
+        description: "Embark on a journey to discover your dream destination, where adventure and relaxation await.",
+    },
+    {
+        icon: TicketIcon,
+        title: "Book a ticket",
+        description: "Ensure a smooth travel experience by booking tickets to your preferred destination via our booking platform.",
+    },
+    {
+        icon: BoltIcon,
+        title: "Make payment",
+        description: "We offer a variety of payment options to meet your preferences and ensure a hassle-free transaction process.",
+    },
+    {
+        icon: BuildingLibraryIcon,
+        title: "Explore destination",
+        description: "You'll be immersed in a captivating tapestry of sights, sounds, and tastes as you wind your way through the ancient streets.",
+    },
+];
 
-//packages highlighted
-export const highlightContentPackage = {
-    heading: "Our Tourist Destinations",
-    subheading: "Tour Packages",
-    description: "You'll be immersed in a capitivatiing tapestry of sights, sounds, and tastes as you wind your way through the ancient"
-};
 
 //Blogs
+
 export const blogs = [
     {
-        image: "images/WaterAd.jpg",
+        id: 1,
+        image: "/images/Bg.webp",
         date: "Nov 14, 2022",
-        title: "2023 Travel Trends - what you need to know",
-        description:
-            "2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is key, and...",
+        title: "2023 Travel Trends – what you need to know",
+        description: "2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is key, and travel remained incredibly important for many."
     },
     {
-        image: "images/Jeep.jpg", // Replace with actual image URL
+        id: 2,
+        image: "/images/Bg.webp",
         date: "Nov 18, 2022",
         title: "Jeep Adventure is a new attraction for tourists visiting Garut",
-        description:
-            "Jeep Adventure is one of the tourist attractions that has been popular recently. The sensation...",
-    },
+        description: "Jeep Adventure is one of the tourist attractions that has been popular recently. The sensation of driving through steep roads offers a unique experience."
+    }
 ];
 
 // testimonials
@@ -202,36 +176,57 @@ export const testimonials = [
         image: "images/Donald.jpg",
         name: "Donald Sullivan",
         title: "Founder Fiko",
-        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
     },
     {
         image: "images/Jane.jpg",
         name: "Jane Doe",
         title: "CEO Wanderlust",
-        feedback: "A fantastic resource for planning trips! The ability to compare prices and reviews from other users is very helpful in decision-making.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
     },
     {
         image: "images/Jhon.jpg",
         name: "John Smith",
         title: "Travel Blogger",
-        feedback: "I found the perfect vacation package thanks to this website! The detailed descriptions and images made choosing easy.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
     },
     {
         image: "images/Jhon.jpg",
         name: "John Smith",
         title: "Travel Blogger",
-        feedback: "I found the perfect vacation package thanks to this website! The detailed descriptions and images made choosing easy.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
     },
     {
         image: "images/Jhon.jpg",
         name: "John Smith",
         title: "Travel Blogger",
-        feedback: "I found the perfect vacation package thanks to this website! The detailed descriptions and images made choosing easy.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
     },
     {
         image: "images/Jhon.jpg",
         name: "John Smith",
         title: "Travel Blogger",
-        feedback: "I found the perfect vacation package thanks to this website! The detailed descriptions and images made choosing easy.",
+        feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
+        avatar: "/images/donald-sullivan.jpg",
+    },
+];
+
+export const footerSections = [
+    {
+        title: "About",
+        items: ["About Us", "Blog", "Careers", "Jobs", "In Press", "Gallery"],
+    },
+    {
+        title: "Support",
+        items: ["Contact Us", "Online Chat", "WhatsApp", "Telegram", "Ticketing", "Call Center"],
+    },
+    {
+        title: "FAQ",
+        items: ["Account", "Booking", "Payments", "Returns", "Privacy Policy", "Terms & Conditions"],
     },
 ];

@@ -1,13 +1,38 @@
-import React from 'react';
+import React from "react";
 
-const Button = ({ children, onClick, className }) => {
-    return (
+const Button = ({
+    id,
+    name,
+    label,
+    href,
+    bgColor = "white",
+    width = "w-[100px]",
+    disabled,
+    onClick,
+    className = "",
+    icon: Icon,
+}) => {
+    const ButtonContent = (
         <button
+            type="button"
+            id={id}
+            name={name}
+            disabled={disabled}
             onClick={onClick}
-            className={` text-black hover:bg-gray-200 rounded-full px-6 py-3 transition-colors duration-300 ${className}`}
-        >
-            {children}
+            className={`relative inline-flex items-center justify-center rounded-full border border-[#3ADCFF]/[.40] bg-${bgColor} py-2 text-sm text-black font-medium cursor-pointer ${className} ${width}`}>
+            <div className="flex gap-1 items-center justify-center w-full">
+                {label}
+                {Icon && <Icon className="w-5 h-5" />}
+            </div>
         </button>
+    );
+
+    return href ? (
+        <a href={href}>
+            {ButtonContent}
+        </a>
+    ) : (
+        ButtonContent
     );
 };
 
