@@ -1,6 +1,11 @@
 import React from "react";
 
-const TestimonialCard = ({ name, title, feedback, avatarSrc = "/images/Bg.webp" }) => {
+const TestimonialCard = ({
+    name,
+    title,
+    feedback,
+    avatarSrc = "/images/Bg.webp"
+}) => {
     return (
         <div className="relative w-full bg-white p-8 md:p-12 rounded-lg shadow-sm border border-gray-400/20 md:max-h-60 h-auto">
 
@@ -20,7 +25,6 @@ const TestimonialCard = ({ name, title, feedback, avatarSrc = "/images/Bg.webp" 
                     </div>
                 </div>
 
-                {/* Testimonial text */}
                 <div className="flex-1 text-center md:text-left max-w-3xl ml-auto w-full">
                     <p className="text-gray-700 leading-relaxed text-base md:text-lg line-clamp-5">
                         {feedback}

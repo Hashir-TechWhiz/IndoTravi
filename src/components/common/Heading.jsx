@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Heading = ({ title, subTitle, description }) => {
+const Heading = ({
+    title,
+    subTitle,
+    description
+}) => {
     return (
         <div className='flex flex-col items-start'>
             <p className='text-lg text-gray-400'>{subTitle}</p>

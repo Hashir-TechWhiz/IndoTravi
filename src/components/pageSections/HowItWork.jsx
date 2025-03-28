@@ -1,21 +1,25 @@
 import React from 'react';
+
 import { steps } from '../../utils/Constants';
 
 const HowItWorks = () => {
     return (
-        <section className="max-w-7xl mx-auto px-2 py-24">
+        <section className="Section">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-12">
 
-                {/* Left Side - Image */}
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <img
                         src="/images/Bg.webp"
                         alt="Travel destination"
                         className="w-full h-full object-cover"
+                        loading='lazy'
                     />
+
+                    <div className="absolute inset-0 flex flex-col justify-end p-8">
+                        <p className="text-lg text-white">Embark on a journey to find your dream destination, where adventure and relaxation await, creating unforgettable memories along the way</p>
+                    </div>
                 </div>
 
-                {/* Right Side - How it Works */}
                 <div className="flex flex-col justify-center">
                     <div className="text-gray-500 font-medium">How it works</div>
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10">One click for you</h2>

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+
 import Button from '../common/Button';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -38,12 +39,12 @@ const Search = () => {
             <div className="relative w-full sm:w-auto max-sm:border border-gray-300 max-sm:py-2 rounded-lg" ref={datePickerRef}>
                 <button
                     className="flex items-center gap-2 w-full justify-center md:justify-start cursor-pointer"
-                    onClick={() => setShowDatePicker(!showDatePicker)}
-                >
+                    onClick={() => setShowDatePicker(!showDatePicker)}>
                     <CalendarDaysIcon className="h-5 w-5" />
                     <span>{date ? date.toLocaleDateString() : "Date"}</span>
                     <span className="ml-5"><ChevronDownIcon className="h-4 w-4" /></span>
                 </button>
+
                 {showDatePicker && (
                     <div className="absolute top-full mt-2 z-10">
                         <DatePicker
@@ -71,6 +72,7 @@ const Search = () => {
                     <span>{budget || "Budget"}</span>
                     <span className="ml-5"><ChevronDownIcon className="h-4 w-4" /></span>
                 </button>
+
                 {budgetOpen && (
                     <div className="absolute bg-white text-black rounded-lg shadow-lg mt-2 py-2 w-full z-10">
                         {["$", "$$", "$$$"].map((option) => (
@@ -98,6 +100,7 @@ const Search = () => {
                     <span>Guest</span>
                     <span className="ml-5"><ChevronDownIcon className="h-4 w-4" /></span>
                 </button>
+
                 {guestsOpen && (
                     <div className="absolute bg-white text-black rounded-lg shadow-lg mt-2 p-4 w-full z-10">
                         <div className="flex flex-col">
@@ -115,7 +118,6 @@ const Search = () => {
                 )}
             </div>
 
-            {/* Search Button */}
             <Button id='search' label='Search' className="md:ml-6" />
         </div>
     );

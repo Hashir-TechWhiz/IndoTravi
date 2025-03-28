@@ -26,13 +26,12 @@ const Header = () => {
 
     return (
         <header className={`fixed top-0 w-full p-5 z-50 transition-colors duration-300 ${isScrolled ? "bg-white/15 backdrop-blur-2xl bg-blur-xl" : "md:mt-5"}`}>
-            <div className="flex items-center justify-between max-w-[95rem] mx-auto">
-                {/* Logo */}
+            <div className="flex items-center justify-between max-w-7xl mx-auto">
+
                 <Link to="/" className={`text-3xl font-extrabold transition-colors duration-300 ${isScrolled ? "text-black" : "text-white"}`}>
                     IndoTravi
                 </Link>
 
-                {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center justify-center space-x-12 py-3 px-6 rounded-full backdrop-blur-md bg-white/15 border border-gray-400/40">
                     {navItems.map((item) => (
                         <a
@@ -45,13 +44,11 @@ const Header = () => {
                     ))}
                 </nav>
 
-                {/* Button (Visible on desktop) */}
                 <div className="hidden lg:flex items-center gap-5">
                     <LanguageToggle />
                     <Button id="login" label="Login" icon={UserPlusIcon} />
                 </div>
 
-                {/* Mobile Menu Button */}
                 <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? (
                         <XMarkIcon className={`w-6 h-6 ${isScrolled ? "text-black" : "text-white"}`} />
@@ -61,7 +58,6 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Navigation */}
             {isOpen && (
                 <div className="lg:hidden flex flex-col items-center space-y-4 mt-5 bg-black p-5 rounded-lg">
                     {navItems.map((item) => (
@@ -74,7 +70,6 @@ const Header = () => {
                             {item.label}
                         </a>
                     ))}
-                    {/* Mobile Button */}
                     <LanguageToggle />
                     <Button id="login" label="Login" icon={UserPlusIcon} />
                 </div>

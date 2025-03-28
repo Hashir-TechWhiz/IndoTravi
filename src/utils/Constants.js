@@ -44,30 +44,6 @@ export const homeCards = [
     },
 ]
 
-//Best Locations
-export const bestLocations = [
-    {
-        id: 1,
-        label: 'Bromo,East Java',
-        description: 'Bromo Tengger Tour',
-    },
-    {
-        id: 2,
-        label: 'Denpasar, Bali',
-        description: 'bali Beach Tourism',
-    },
-    {
-        id: 3,
-        label: 'Lampung,South Sumatra',
-        description: 'Sumatra Tourism',
-    },
-    {
-        id: 4,
-        label: 'Jogjagartha , Central Java',
-        description: 'Borobudur Temple Tour',
-    },
-]
-
 // Destinations for location components
 export const destinations = [
     {
@@ -96,7 +72,7 @@ export const destinations = [
 export const tourPackages = [
     {
         id: 1,
-        image: '/images/Bg.webp',
+        image: '/images/BaliTour.webp',
         days: '7 Days',
         rating: '4.9',
         startDate: '23 AUGUST',
@@ -106,7 +82,7 @@ export const tourPackages = [
     },
     {
         id: 2,
-        image: '/images/Bg.webp',
+        image: '/images/JavaTour.webp',
         days: '5 Days',
         rating: '4.8',
         startDate: '23 AUGUST',
@@ -116,7 +92,7 @@ export const tourPackages = [
     },
     {
         id: 3,
-        image: '/images/Bg.webp',
+        image: '/images/Solo.webp',
         days: '3 Days',
         rating: '4.9',
         startDate: '23 AUGUST',
@@ -152,7 +128,6 @@ export const steps = [
 
 
 //Blogs
-
 export const blogs = [
     {
         id: 1,
@@ -163,52 +138,47 @@ export const blogs = [
     },
     {
         id: 2,
-        image: "/images/Bg.webp",
+        image: "/images/Jeep.webp",
         date: "Nov 18, 2022",
         title: "Jeep Adventure is a new attraction for tourists visiting Garut",
         description: "Jeep Adventure is one of the tourist attractions that has been popular recently. The sensation of driving through steep roads offers a unique experience."
     }
 ];
 
-// testimonials
+// Testimonials
 export const testimonials = [
     {
-        image: "images/Donald.jpg",
         name: "Donald Sullivan",
         title: "Founder Fiko",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
         avatar: "/images/donald-sullivan.jpg",
     },
     {
-        image: "images/Jane.jpg",
         name: "Jane Doe",
         title: "CEO Wanderlust",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
         avatar: "/images/donald-sullivan.jpg",
     },
     {
-        image: "images/Jhon.jpg",
+
         name: "John",
         title: "Travel Blogger",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
         avatar: "/images/donald-sullivan.jpg",
     },
     {
-        image: "images/Jhon.jpg",
         name: "Michel",
         title: "Travel Blogger",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
         avatar: "/images/donald-sullivan.jpg",
     },
     {
-        image: "images/Jhon.jpg",
         name: "Smith",
         title: "Travel Blogger",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
         avatar: "/images/donald-sullivan.jpg",
     },
     {
-        image: "images/Jhon.jpg",
         name: "Ronal",
         title: "Travel Blogger",
         feedback: "This travel website is very informative and easy to use. I like how they present various destination options and travel packages with clear details. Offering pictures and destination descriptions helps me decide where I want to visit. Additionally, the ability to compare prices and reviews from other users is very helpful in decision making.",
@@ -216,6 +186,7 @@ export const testimonials = [
     },
 ];
 
+// Footer links
 export const footerSections = [
     {
         title: "About",

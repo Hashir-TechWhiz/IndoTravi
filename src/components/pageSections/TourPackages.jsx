@@ -1,12 +1,13 @@
 import React from 'react';
-import { tourPackages } from '../../utils/Constants';
+
 import TourCard from '../cards/TourCard';
 import Heading from '../common/Heading';
 import Button from '../common/Button';
+import { tourPackages } from '../../utils/Constants';
 
 const TourPackages = () => {
     return (
-        <section className="max-w-7xl mx-auto px-2 py-20">
+        <section className="Section">
 
             <Heading
                 title="Our Tourist Destinations"

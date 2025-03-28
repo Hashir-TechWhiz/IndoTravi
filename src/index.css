@@ -9,4 +9,8 @@
         font-family: "DM Sans", serif;
         font-optical-sizing: auto;
     }
+
+    .Section {
+        @apply max-w-7xl mx-auto md:py-24 py-14 px-2;
+    }
 }

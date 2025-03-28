@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { testimonials } from '../../utils/Constants';
+import { Navigation, Autoplay } from 'swiper/modules';
 import TestimonialCard from '../cards/TestimonialCard';
-import { ArrowLeftCircleIcon, ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 const TestimonialSlider = () => {
     return (
@@ -32,6 +32,7 @@ const TestimonialSlider = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
             <div className='hidden md:flex absolute gap-10 bottom-5 left-[5.5%] z-20'>
                 <button className="arrow-left text-black text-2xl cursor-pointer">
                     <ArrowLeftIcon className='w-5 h-5' />
@@ -40,6 +41,7 @@ const TestimonialSlider = () => {
                     <ArrowRightIcon className='w-5 h-5' />
                 </button>
             </div>
+
         </div>
     );
 };

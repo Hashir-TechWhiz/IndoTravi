@@ -1,11 +1,13 @@
 import React from 'react';
+
+import Button from '../common/Button';
 import BlogCard from '../cards/BlogCard';
 import { blogs } from '../../utils/Constants';
 
-const BlogCards = () => {
+const Blog = () => {
 
     return (
-        <div className="max-w-7xl mx-auto py-20 px-2">
+        <div className="Section">
 
             <div className='flex flex-col items-center justify-center gap-2'>
                 <p className='text-lg text-gray-400'>Our Blog</p>
@@ -23,8 +25,12 @@ const BlogCards = () => {
                     />
                 ))}
             </div>
+
+            <div className='flex justify-center mt-10'>
+                <Button id="view" label="View More" className='text-white' bgColor='black' />
+            </div>
         </div>
     );
 };
 
-export default BlogCards;
+export default Blog;

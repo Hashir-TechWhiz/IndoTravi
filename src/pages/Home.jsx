@@ -1,10 +1,11 @@
 import React from 'react'
+
+import Blog from '../components/pageSections/Blog';
 import HowItWorks from '../components/pageSections/HowItWork';
 import HeroSection from '../components/pageSections/HeroSection';
 import TourPackages from '../components/pageSections/TourPackages';
 import Testimonials from '../components/pageSections/Testimonials';
 import BestLocations from '../components/pageSections/BestLocations';
-import BlogCards from '../components/pageSections/Blog';
 
 const Home = () => {
     return (
@@ -14,9 +15,8 @@ const Home = () => {
             <HowItWorks />
             <TourPackages />
             <Testimonials />
-            <BlogCards />
+            <Blog />
         </>
-
     )
 }
 
