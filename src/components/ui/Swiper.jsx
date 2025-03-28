@@ -26,7 +26,7 @@ const TestimonialSlider = () => {
             >
                 {testimonials.map((card, index) => (
                     <SwiperSlide key={index} className="w-full">
-                        <div className="flex justify-center items-center w-full px-4">
+                        <div className="flex justify-center items-center w-full">
                             <TestimonialCard key={card.title} feedback={card.feedback} name={card.name} title={card.title} />
                         </div>
                     </SwiperSlide>
@@ -41,7 +41,6 @@ const TestimonialSlider = () => {
                     <ArrowRightIcon className='w-5 h-5' />
                 </button>
             </div>
-
         </div>
     );
 };

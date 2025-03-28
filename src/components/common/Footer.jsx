@@ -8,7 +8,7 @@ import { FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="bg-black/100 text-white py-10">
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:justify-items-normal justify-items-center">
+            <div className="max-w-7xl mx-auto px-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:justify-items-normal justify-items-center">
 
                 {footerSections.map((section, index) => (
                     <div key={index} className="text-center md:text-left">
